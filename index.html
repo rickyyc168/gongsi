@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>公司注册一站通 - 有限公司 & 一人公司注册指南</title>
+<meta name="description" content="有限公司与一人有限责任公司注册全流程、费用计算、法律法规、风险自测，一站式公司注册指南">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--primary:#2563eb;--primary-light:#dbeafe;--accent:#f59e0b;--bg:#f8fafc;--card:#fff;--text:#1e293b;--muted:#64748b;--border:#e2e8f0;--success:#10b981;--danger:#ef4444;--warn:#f59e0b}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* ===== Nav ===== */
+nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 20px}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:56px}
+.nav-brand{font-size:18px;font-weight:700;color:var(--primary);display:flex;align-items:center;gap:8px}
+.nav-links{display:flex;gap:4px}
+.nav-links a{padding:8px 14px;border-radius:8px;text-decoration:none;color:var(--muted);font-size:14px;font-weight:500;transition:.2s}
+.nav-links a:hover,.nav-links a.active{color:var(--primary);background:var(--primary-light)}
+
+/* ===== Hero ===== */
+.hero{text-align:center;padding:60px 20px 40px;background:linear-gradient(135deg,#eff6ff 0%,#f0fdf4 50%,#fef3c7 100%);border-radius:0 0 32px 32px}
+.hero h1{font-size:36px;font-weight:800;margin-bottom:12px}
+.hero h1 span{color:var(--primary)}
+.hero p{color:var(--muted);font-size:16px;max-width:600px;margin:0 auto 28px}
+.hero-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:800px;margin:0 auto}
+.hero-card{background:var(--card);border-radius:12px;padding:20px 12px;border:1px solid var(--border);cursor:pointer;transition:.2s;text-align:center;text-decoration:none;color:var(--text)}
+.hero-card:hover{border-color:var(--primary);box-shadow:0 4px 16px rgba(37,99,235,.1);transform:translateY(-2px);text-decoration:none}
+.hero-card .icon{font-size:32px;margin-bottom:8px}
+.hero-card .label{font-weight:600;font-size:14px}
+.hero-card .desc{font-size:12px;color:var(--muted);margin-top:4px}
+
+/* ===== Sections ===== */
+section{max-width:1100px;margin:0 auto;padding:40px 20px}
+.section-title{font-size:26px;font-weight:800;margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.section-desc{color:var(--muted);margin-bottom:24px;font-size:15px}
+
+/* ===== Cards ===== */
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;margin-bottom:16px;transition:.2s}
+.card:hover{box-shadow:0 2px 12px rgba(0,0,0,.06)}
+
+/* ===== Tabs ===== */
+.tabs{display:flex;gap:4px;margin-bottom:24px;border-bottom:2px solid var(--border);padding-bottom:0;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{padding:10px 18px;font-size:14px;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;transition:.2s;white-space:nowrap;flex-shrink:0}
+.tab:hover{color:var(--text)}
+.tab.active{color:var(--primary);border-bottom-color:var(--primary)}
+.tab-content{display:none}
+.tab-content.active{display:block}
+
+/* ===== Timeline ===== */
+.timeline{position:relative;padding-left:28px}
+.timeline::before{content:'';position:absolute;left:10px;top:8px;bottom:8px;width:2px;background:var(--border)}
+.timeline-item{position:relative;margin-bottom:20px}
+.timeline-item::before{content:'';position:absolute;left:-22px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--primary);border:2px solid #fff;box-shadow:0 0 0 2px var(--primary)}
+.timeline-item.red::before{background:var(--danger);box-shadow:0 0 0 2px var(--danger)}
+.timeline-item.yellow::before{background:var(--accent);box-shadow:0 0 0 2px var(--accent)}
+.timeline-item.green::before{background:var(--success);box-shadow:0 0 0 2px var(--success)}
+.timeline-step{font-weight:700;color:var(--primary);font-size:15px}
+.timeline-text{font-size:14px;color:var(--text);margin-top:2px}
+.timeline-tip{font-size:13px;color:var(--muted);margin-top:2px;font-style:italic}
+
+/* ===== Tables ===== */
+.data-table{width:100%;border-collapse:collapse;font-size:14px}
+.data-table th{background:var(--primary);color:#fff;padding:12px 16px;text-align:left;font-weight:600}
+.data-table th:first-child{border-radius:8px 0 0 0}
+.data-table th:last-child{border-radius:0 8px 0 0}
+.data-table td{padding:12px 16px;border-bottom:1px solid var(--border)}
+.data-table tr:last-child td{border-bottom:none}
+.data-table tr:hover td{background:#f8fafc}
+
+/* ===== Calculator ===== */
+.calc-form{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
+.form-group{display:flex;flex-direction:column;gap:6px}
+.form-group label{font-size:13px;font-weight:600;color:var(--muted)}
+.form-group select,.form-group input{padding:10px 14px;border:1px solid var(--border);border-radius:10px;font-size:15px;outline:none;transition:.2s;background:var(--card)}
+.form-group select:focus,.form-group input:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(37,99,235,.1)}
+.calc-btn{grid-column:1/-1;padding:12px;background:var(--primary);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:600;cursor:pointer;transition:.2s}
+.calc-btn:hover{background:#1d4ed8}
+.result{display:none;margin-top:20px}
+.result.show{display:block}
+.result-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
+.result-stat{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;text-align:center}
+.result-stat .val{font-size:22px;font-weight:800;margin-bottom:4px}
+.result-stat .lbl{font-size:12px;color:var(--muted)}
+.val.blue{color:var(--primary)}
+.val.green{color:var(--success)}
+.val.orange{color:var(--accent)}
+.val.red{color:var(--danger)}
+
+/* ===== Checklist ===== */
+.checklist{list-style:none;padding:0}
+.checklist li{padding:10px 14px;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;gap:10px;font-size:14px}
+.checklist li:last-child{border-bottom:none}
+.checklist .check-icon{width:20px;height:20px;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:12px;font-weight:700;margin-top:2px}
+.check-required{background:#fef2f2;color:var(--danger)}
+.check-optional{background:#fefce8;color:var(--accent)}
+.check-tip{font-size:12px;color:var(--muted);margin-left:auto;white-space:nowrap}
+
+/* ===== Compare Grid ===== */
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.compare-col .card{border-top:3px solid var(--primary)}
+.compare-col:last-child .card{border-top-color:var(--success)}
+.compare-col h3{font-size:16px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:6px}
+
+/* ===== Risk Quiz ===== */
+.quiz-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;margin-bottom:16px}
+.quiz-q{font-size:16px;font-weight:600;margin-bottom:12px}
+.quiz-options{display:flex;flex-direction:column;gap:8px}
+.quiz-opt{padding:12px 16px;border:1px solid var(--border);border-radius:10px;cursor:pointer;transition:.2s;font-size:14px}
+.quiz-opt:hover{border-color:var(--primary);background:var(--primary-light)}
+.quiz-opt.selected{border-color:var(--primary);background:var(--primary-light);font-weight:600}
+.quiz-result{display:none;margin-top:20px;padding:24px;border-radius:16px;text-align:center}
+.quiz-result.show{display:block}
+.quiz-result.safe{background:#f0fdf4;border:1px solid #bbf7d0}
+.quiz-result.warn{background:#fffbeb;border:1px solid #fde68a}
+.quiz-result.danger{background:#fef2f2;border:1px solid #fecaca}
+.risk-score{font-size:48px;font-weight:800;margin:8px 0}
+.risk-label{font-size:18px;font-weight:700;margin-bottom:8px}
+.risk-advice{text-align:left;font-size:14px;margin-top:16px;line-height:1.8}
+
+/* ===== Law Cards ===== */
+.law-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:12px}
+.law-card .law-num{display:inline-block;font-size:12px;font-weight:700;padding:2px 10px;border-radius:6px;background:var(--primary-light);color:var(--primary);margin-bottom:8px}
+.law-card .law-title{font-weight:700;font-size:15px;margin-bottom:6px}
+.law-card .law-body{font-size:14px;color:var(--muted);line-height:1.8}
+
+/* ===== Change Tags ===== */
+.change-list{display:grid;gap:12px}
+.change-item{display:flex;gap:12px;align-items:flex-start;padding:16px;background:var(--card);border:1px solid var(--border);border-radius:12px}
+.change-dot{width:8px;height:8px;border-radius:50%;margin-top:7px;flex-shrink:0}
+.dot-red{background:var(--danger)}
+.dot-yellow{background:var(--accent)}
+.dot-blue{background:var(--primary)}
+.dot-green{background:var(--success)}
+.change-item strong{display:block;margin-bottom:4px;font-size:15px}
+.change-item p{font-size:13px;color:var(--muted);margin:0}
+
+/* ===== Footer ===== */
+footer{max-width:1100px;margin:40px auto 0;padding:24px 20px;border-top:1px solid var(--border);text-align:center;color:var(--muted);font-size:13px}
+footer a{color:var(--muted)}
+
+/* ===== AI Chat ===== */
+.ai-section{text-align:center;padding:40px 20px}
+.ai-card{max-width:500px;margin:0 auto;background:var(--card);border:1px solid var(--border);border-radius:20px;padding:40px 32px}
+.ai-avatar{width:64px;height:64px;border-radius:16px;background:linear-gradient(135deg,#3b82f6,#8b5cf6);margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-size:32px}
+.ai-card h3{font-size:20px;margin-bottom:8px}
+.ai-card p{color:var(--muted);font-size:14px;margin-bottom:24px}
+.ai-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 28px;background:linear-gradient(135deg,#3b82f6,#8b5cf6);color:#fff;border:none;border-radius:12px;font-size:15px;font-weight:600;cursor:pointer;text-decoration:none;transition:.2s}
+.ai-btn:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(59,130,246,.3);text-decoration:none;color:#fff}
+
+/* ===== Floating Chat Button ===== */
+#chat-fab{position:fixed;bottom:80px;right:24px;width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#3b82f6,#8b5cf6);color:#fff;display:flex;align-items:center;justify-content:center;font-size:24px;cursor:pointer;box-shadow:0 4px 20px rgba(59,130,246,.4);z-index:300;transition:.2s;animation:fab-pulse 2s infinite}
+#chat-fab:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(59,130,246,.5)}
+@keyframes fab-pulse{0%,100%{box-shadow:0 4px 20px rgba(59,130,246,.4)}50%{box-shadow:0 4px 28px rgba(59,130,246,.6)}}
+
+/* ===== Chat Panel ===== */
+#chat-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.3);z-index:399}
+#chat-overlay.show{display:block}
+#chat-panel{display:none;position:fixed;bottom:148px;right:24px;width:400px;max-height:560px;background:var(--card);border-radius:20px;box-shadow:0 8px 40px rgba(0,0,0,.15);z-index:400;overflow:hidden;flex-direction:column}
+#chat-panel.show{display:flex}
+#chat-header{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:1px solid var(--border);background:linear-gradient(135deg,#3b82f6,#8b5cf6);color:#fff;border-radius:20px 20px 0 0}
+#chat-header span{font-weight:600;font-size:15px}
+#chat-close{width:28px;height:28px;border-radius:50%;border:none;background:rgba(255,255,255,.2);color:#fff;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.2s}
+#chat-close:hover{background:rgba(255,255,255,.3)}
+#chat-iframe{flex:1;border:none;min-height:460px}
+#chat-fallback{display:none;padding:40px 24px;text-align:center}
+#chat-fallback p{color:var(--muted);font-size:14px;margin-bottom:16px}
+
+@media(max-width:768px){
+  #chat-fab{bottom:72px;right:16px;width:50px;height:50px;font-size:20px}
+  #chat-panel{bottom:0;right:0;left:0;width:100%;max-height:100vh;border-radius:20px 20px 0 0}
+  #chat-iframe{min-height:70vh}
+}
+
+/* ===== Responsive ===== */
+@media(max-width:768px){
+  body{font-size:15px}
+  section{padding:28px 16px}
+  nav{position:fixed;bottom:0;top:auto;left:0;right:0;z-index:200;border-bottom:none;border-top:1px solid var(--border);padding:0;background:rgba(255,255,255,.96);backdrop-filter:blur(16px)}
+  .nav-inner{height:56px;justify-content:center}
+  .nav-brand{display:none}
+  .nav-links{display:flex!important;gap:0;width:100%;justify-content:space-around}
+  .nav-links a{flex:1;text-align:center;padding:8px 4px;border-radius:0;font-size:11px;display:flex;flex-direction:column;align-items:center;gap:2px;color:var(--muted)}
+  .nav-links a::before{font-size:18px}
+  .nav-links a:nth-child(1)::before{content:'📋'}
+  .nav-links a:nth-child(2)::before{content:'💰'}
+  .nav-links a:nth-child(3)::before{content:'⚖️'}
+  .nav-links a:nth-child(4)::before{content:'⚠️'}
+  .nav-links a:nth-child(5)::before{content:'🤖'}
+  body{padding-bottom:56px}
+  .hero{padding:36px 16px 28px;border-radius:0 0 24px 24px}
+  .hero h1{font-size:24px;line-height:1.3}
+  .hero-cards{grid-template-columns:repeat(2,1fr);gap:10px;max-width:100%}
+  .hero-card{padding:16px 10px}
+  .hero-card .icon{font-size:28px}
+  .section-title{font-size:20px}
+  .calc-form{grid-template-columns:1fr}
+  .result-grid{grid-template-columns:1fr 1fr}
+  .compare-grid{grid-template-columns:1fr}
+  .data-table{font-size:13px}
+  .data-table th,.data-table td{padding:10px 12px}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== Nav ===== -->
+<nav>
+<div class="nav-inner">
+  <div class="nav-brand">🏢 公司注册一站通</div>
+  <div class="nav-links">
+    <a href="#guide">📋 速查</a>
+    <a href="#calc">💰 费用</a>
+    <a href="#law">⚖️ 法规</a>
+    <a href="#risk">⚠️ 风险</a>
+    <a href="#ai">🤖 顾问</a>
+  </div>
+</div>
+</nav>
+
+<!-- ===== Hero ===== -->
+<div class="hero">
+  <h1>公司注册<span>一站通</span></h1>
+  <p>有限公司 & 一人公司注册全流程、费用、法规、风险——一个页面搞定</p>
+  <div class="hero-cards">
+    <a href="#guide" class="hero-card" onclick="switchTabDirect('tab-flow')">
+      <div class="icon">📝</div>
+      <div class="label">注册流程</div>
+      <div class="desc">7步走完</div>
+    </a>
+    <a href="#guide" class="hero-card" onclick="switchTabDirect('tab-docs')">
+      <div class="icon">📂</div>
+      <div class="label">材料清单</div>
+      <div class="desc">逐项勾选</div>
+    </a>
+    <a href="#calc" class="hero-card">
+      <div class="icon">🧮</div>
+      <div class="label">费用计算</div>
+      <div class="desc">一键算清</div>
+    </a>
+    <a href="#risk" class="hero-card">
+      <div class="icon">🛡️</div>
+      <div class="label">风险自测</div>
+      <div class="desc">3分钟评估</div>
+    </a>
+  </div>
+</div>
+
+<!-- ============================== -->
+<!-- Section 1: 注册速查            -->
+<!-- ============================== -->
+<section id="guide">
+  <div class="section-title">📋 注册速查</div>
+  <div class="section-desc">有限公司与一人公司的注册流程、材料、区别，一页看清</div>
+
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab(this,'tab-flow')">注册流程</div>
+    <div class="tab" onclick="switchTab(this,'tab-docs')">材料清单</div>
+    <div class="tab" onclick="switchTab(this,'tab-compare')">类型对比</div>
+    <div class="tab" onclick="switchTab(this,'tab-post')">后续必办</div>
+  </div>
+
+  <!-- Tab 1: 注册流程 -->
+  <div id="tab-flow" class="tab-content active">
+    <div class="compare-grid">
+      <div class="compare-col">
+        <div class="card">
+          <h3>👥 有限责任公司（多人）</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-step">第①步：核名</div>
+              <div class="timeline-text">准备3-5个名称，线上提交预核准，1个工作日出结果</div>
+              <div class="timeline-tip">格式：XX市+字号+行业+有限公司</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-step">第②步：准备材料</div>
+              <div class="timeline-text">章程、股东证明、地址证明、法人/监事身份证</div>
+              <div class="timeline-tip">⚠️ 法人与监事不能是同一人</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-step">第③步：提交申请</div>
+              <div class="timeline-text">线上（全程电子化平台）或线下（市场监管局窗口）</div>
+            </div>
+            <div class="timeline-item yellow">
+              <div class="timeline-step">第④步：领取营业执照</div>
+              <div class="timeline-text">审核通过后3-5个工作日领取正副本</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-step">第⑤步：刻章</div>
+              <div class="timeline-text">公章、财务章、法人章、合同章、发票章</div>
+              <div class="timeline-tip">部分地区政府免费提供首套章</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-step">第⑥步：银行开户</div>
+              <div class="timeline-text">携带营业执照到银行开立基本户</div>
+            </div>
+            <div class="timeline-item green">
+              <div class="timeline-step">第⑦步：税务登记</div>
+              <div class="timeline-text">30日内到税务局登记，核定税种</div>
+              <div class="timeline-tip">逾期可能被罚款！</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="compare-col">
+        <div class="card">
+          <h3>👤 一人有限责任公司（OPC）</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-step">第①步：核名</div>
+              <div class="timeline-text">同上，准备3-5个名称线上核名</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-step">第②步：准备材料</div>
+              <div class="timeline-text">章程（股东单独制定）、股东+监事+法人身份证、地址证明</div>
+              <div class="timeline-tip">⚠️ 一人公司也必须设监事</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-step">第③步：提交申请</div>
+              <div class="timeline-text">同上，线上或线下提交</div>
+            </div>
+            <div class="timeline-item yellow">
+              <div class="timeline-step">第④步：领取营业执照</div>
+              <div class="timeline-text">须注明"自然人独资"或"法人独资"</div>
+              <div class="timeline-tip">📌 与多人公司的唯一区别在此</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-step">第⑤步：刻章</div>
+              <div class="timeline-text">同上，五枚章</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-step">第⑥步：银行开户</div>
+              <div class="timeline-text">同上</div>
+            </div>
+            <div class="timeline-item green">
+              <div class="timeline-step">第⑦步：税务登记</div>
+              <div class="timeline-text">同上，30日内完成</div>
+              <div class="timeline-tip">⚡ 一人公司建议选代理记账+年度审计</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="background:#eff6ff;border-color:#93c5fd">
+      <strong>💡 关键区别：</strong>一人公司和多人公司的注册流程 <strong>几乎完全一样</strong>，差异只在于：① 章程由股东单独制定 ② 营业执照注明独资类型 ③ 必须设监事 ④ 必须年度审计
+    </div>
+  </div>
+
+  <!-- Tab 2: 材料清单 -->
+  <div id="tab-docs" class="tab-content">
+    <div class="compare-grid">
+      <div class="compare-col">
+        <div class="card">
+          <h3>👥 多人有限公司材料清单</h3>
+          <ul class="checklist">
+            <li><span class="check-icon check-required">必</span>公司登记（备案）申请书<span class="check-tip">工商局模板</span></li>
+            <li><span class="check-icon check-required">必</span>公司章程（全体股东签字）<span class="check-tip">可参考模板修改</span></li>
+            <li><span class="check-icon check-required">必</span>全体股东身份证原件+复印件</li>
+            <li><span class="check-icon check-required">必</span>法定代表人身份证原件+复印件</li>
+            <li><span class="check-icon check-required">必</span>法定代表人任职文件<span class="check-tip">股东会决议</span></li>
+            <li><span class="check-icon check-required">必</span>监事任职文件<span class="check-tip">股东会决议</span></li>
+            <li><span class="check-icon check-required">必</span>注册地址证明<span class="check-tip">房产证/租赁合同</span></li>
+            <li><span class="check-icon check-required">必</span>名称预先核准通知书</li>
+            <li><span class="check-icon check-optional">选</span>委托代理人授权委托书<span class="check-tip">如委托代办</span></li>
+            <li><span class="check-icon check-optional">选</span>前置审批文件<span class="check-tip">特殊行业需要</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="compare-col">
+        <div class="card">
+          <h3>👤 一人有限公司材料清单</h3>
+          <ul class="checklist">
+            <li><span class="check-icon check-required">必</span>公司登记（备案）申请书<span class="check-tip">工商局模板</span></li>
+            <li><span class="check-icon check-required">必</span>公司章程（股东单独签字）<span class="check-tip">⚠️ 不是共同制定</span></li>
+            <li><span class="check-icon check-required">必</span>股东身份证原件+复印件</li>
+            <li><span class="check-icon check-required">必</span>法定代表人身份证原件+复印件</li>
+            <li><span class="check-icon check-required">必</span>监事身份证原件+复印件<span class="check-tip">⚠️ 必须设监事</span></li>
+            <li><span class="check-icon check-required">必</span>注册地址证明<span class="check-tip">房产证/租赁合同</span></li>
+            <li><span class="check-icon check-required">必</span>名称预先核准通知书</li>
+            <li><span class="check-icon check-optional">选</span>委托代理人授权委托书<span class="check-tip">如委托代办</span></li>
+            <li><span class="check-icon check-optional">选</span>前置审批文件<span class="check-tip">特殊行业需要</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab 3: 类型对比 -->
+  <div id="tab-compare" class="tab-content">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>对比维度</th>
+          <th>个体工商户</th>
+          <th>个人独资企业</th>
+          <th>一人有限公司</th>
+          <th>多人有限公司</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>法人资格</strong></td><td>❌ 无</td><td>❌ 无</td><td>✅ 有</td><td>✅ 有</td></tr>
+        <tr><td><strong>股东人数</strong></td><td>—</td><td>—</td><td>1人</td><td>2-50人</td></tr>
+        <tr><td><strong>责任形式</strong></td><td>🔴 无限责任</td><td>🔴 无限责任</td><td>🟡 有限责任*</td><td>🟢 有限责任</td></tr>
+        <tr><td><strong>命名要求</strong></td><td>不能含"公司"</td><td>不能含"公司"</td><td>须含"有限公司"</td><td>须含"有限公司"</td></tr>
+        <tr><td><strong>投资者</strong></td><td>自然人</td><td>自然人</td><td>自然人或法人</td><td>自然人或法人</td></tr>
+        <tr><td><strong>税务</strong></td><td>个人所得税</td><td>个人所得税</td><td>企业所得税+分红个税</td><td>企业所得税+分红个税</td></tr>
+        <tr><td><strong>年度审计</strong></td><td>不要求</td><td>不要求</td><td>⚠️ 必须审计</td><td>不要求</td></tr>
+        <tr><td><strong>融资能力</strong></td><td>弱</td><td>弱</td><td>较弱（可增资）</td><td>强（可增股东）</td></tr>
+        <tr><td><strong>适合场景</strong></td><td>小本经营</td><td>工作室/个人品牌</td><td>独资创业</td><td>合伙创业</td></tr>
+        <tr><td><strong>设立门槛</strong></td><td>最低</td><td>低</td><td>较低</td><td>较低</td></tr>
+      </tbody>
+    </table>
+    <div class="card" style="margin-top:16px;background:#fffbeb;border-color:#fde68a">
+      <strong>💡 选择建议：</strong><br>
+      • 小本生意、风险低 → <strong>个体工商户</strong>（简单、税负低）<br>
+      • 个人品牌、工作室 → <strong>个人独资企业</strong>（灵活）<br>
+      • 独资创业、需责任保护 → <strong>一人有限公司</strong>（但须严格区分财产）<br>
+      • 合伙创业、需要融资 → <strong>多人有限公司</strong>（推荐）
+    </div>
+  </div>
+
+  <!-- Tab 4: 后续必办 -->
+  <div id="tab-post" class="tab-content">
+    <table class="data-table">
+      <thead>
+        <tr><th>序号</th><th>事项</th><th>时间要求</th><th>说明</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td><strong>刻制公章</strong></td><td>领照后立即</td><td>公章、财务章、法人章、合同章、发票章（300-800元）</td></tr>
+        <tr><td>2</td><td><strong>银行开户</strong></td><td>领照后尽快</td><td>开立基本存款账户（年费400-1500元）</td></tr>
+        <tr><td>3</td><td><strong>税务登记</strong></td><td>🔴 30日内</td><td>核定税种，领取税控UKey，逾期可能被罚款</td></tr>
+        <tr><td>4</td><td><strong>确定纳税人身份</strong></td><td>税务登记时</td><td>小规模（≤500万）或一般纳税人</td></tr>
+        <tr><td>5</td><td><strong>社保开户</strong></td><td>有员工时</td><td>为员工办理社保登记</td></tr>
+        <tr><td>6</td><td><strong>公积金开户</strong></td><td>有员工时</td><td>部分地区要求</td></tr>
+        <tr><td>7</td><td><strong>申请发票</strong></td><td>需要时</td><td>现为数电票（全面数字化电子发票）</td></tr>
+        <tr><td>8</td><td><strong>行业许可证</strong></td><td>经营前</td><td>如有前置/后置审批需办理</td></tr>
+        <tr><td>9</td><td><strong>代理记账/自记账</strong></td><td>领照后</td><td>小规模2000-4000元/年，一般纳税人4000-6000元/年</td></tr>
+        <tr><td>10</td><td><strong>年度审计（一人公司）</strong></td><td>每年</td><td>⚠️ 一人公司法定要求，不可省略</td></tr>
+        <tr><td>11</td><td><strong>工商年报</strong></td><td>🔴 每年1-6月</td><td>未报将被列入经营异常名录</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============================== -->
+<!-- Section 2: 费用计算器          -->
+<!-- ============================== -->
+<section id="calc">
+  <div class="section-title">💰 费用计算器</div>
+  <div class="section-desc">输入基本信息，一键算出注册+首年维护总费用</div>
+
+  <div class="card">
+    <div class="calc-form">
+      <div class="form-group">
+        <label>公司类型</label>
+        <select id="c-type">
+          <option value="multi">多人有限公司</option>
+          <option value="one">一人有限责任公司</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>注册资本（万元）</label>
+        <input type="number" id="c-capital" value="50" min="1" max="99999">
+      </div>
+      <div class="form-group">
+        <label>注册地址</label>
+        <select id="c-addr">
+          <option value="own">自有房产</option>
+          <option value="gov">政府/园区挂靠</option>
+          <option value="biz">商务秘书地址</option>
+          <option value="office">写字楼租赁</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>记账方式</label>
+        <select id="c-accounting">
+          <option value="agent-small">代理记账（小规模纳税人）</option>
+          <option value="agent-normal">代理记账（一般纳税人）</option>
+          <option value="self">自记账</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>注册方式</label>
+        <select id="c-method">
+          <option value="self">自己办理</option>
+          <option value="agent">委托代办</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>刻章</label>
+        <select id="c-seal">
+          <option value="free">政府免费提供</option>
+          <option value="normal">自行刻制（约500元）</option>
+        </select>
+      </div>
+      <button class="calc-btn" onclick="calcCost()">🧮 计算总费用</button>
+    </div>
+
+    <div id="calc-result" class="result">
+      <div class="result-grid">
+        <div class="result-stat">
+          <div class="val blue" id="cr-seal">—</div>
+          <div class="lbl">刻章费</div>
+        </div>
+        <div class="result-stat">
+          <div class="val orange" id="cr-addr">—</div>
+          <div class="lbl">地址费/年</div>
+        </div>
+        <div class="result-stat">
+          <div class="val green" id="cr-account">—</div>
+          <div class="lbl">记账费/年</div>
+        </div>
+        <div class="result-stat">
+          <div class="val red" id="cr-total">—</div>
+          <div class="lbl">首年总计</div>
+        </div>
+      </div>
+      <div class="card" id="cr-detail" style="font-size:14px;line-height:2"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== -->
+<!-- Section 3: 法律法规库          -->
+<!-- ============================== -->
+<section id="law">
+  <div class="section-title">⚖️ 法律法规库</div>
+  <div class="section-desc">2024新公司法核心变化 + 关键法条 + 司法实践</div>
+
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab(this,'tab-newlaw')">新公司法变化</div>
+    <div class="tab" onclick="switchTab(this,'tab-articles')">核心法条</div>
+    <div class="tab" onclick="switchTab(this,'tab-cases')">司法案例</div>
+    <div class="tab" onclick="switchTab(this,'tab-transition')">存量过渡期</div>
+  </div>
+
+  <!-- Tab: 新公司法变化 -->
+  <div id="tab-newlaw" class="tab-content active">
+    <div class="change-list">
+      <div class="change-item">
+        <div class="change-dot dot-red"></div>
+        <div>
+          <strong>注册资本五年实缴制（第47条）</strong>
+          <p>全体股东认缴的出资额须自公司成立之日起 <strong>5年内缴足</strong>。"天价认缴、百年期限"成为历史。新公司须在章程中明确出资时间。</p>
+        </div>
+      </div>
+      <div class="change-item">
+        <div class="change-dot dot-red"></div>
+        <div>
+          <strong>存量公司3年过渡期</strong>
+          <p>2024年6月30日前成立的公司，须在 <strong>2027年6月30日前</strong> 将出资期限调整至5年以内。出资数额明显异常的，登记机关可要求调整。</p>
+        </div>
+      </div>
+      <div class="change-item">
+        <div class="change-dot dot-green"></div>
+        <div>
+          <strong>取消一人公司设立限制</strong>
+          <p>旧法"一个自然人只能设立一个一人公司"的限制被 <strong>删除</strong>。现在一个自然人可以设立多个一人有限公司。</p>
+        </div>
+      </div>
+      <div class="change-item">
+        <div class="change-dot dot-blue"></div>
+        <div>
+          <strong>删除一人有限公司专节</strong>
+          <p>旧法第二章第三节"一人有限公司特别规定"被删除，一人公司融入一般性规定，与普通有限公司的差异大幅缩小。</p>
+        </div>
+      </div>
+      <div class="change-item">
+        <div class="change-dot dot-yellow"></div>
+        <div>
+          <strong>强制吊销僵尸公司</strong>
+          <p>被吊销/关闭/撤销满 <strong>3年</strong> 未注销的，登记机关公告60日后可 <strong>强制注销</strong>。</p>
+        </div>
+      </div>
+      <div class="change-item">
+        <div class="change-dot dot-red"></div>
+        <div>
+          <strong>特殊行业仍需全额实缴</strong>
+          <p>银行、证券、保险、融资担保等行业的有限公司仍不适用"限期实缴"，须全额缴纳注册资本。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab: 核心法条 -->
+  <div id="tab-articles" class="tab-content">
+    <div class="law-card">
+      <span class="law-num">第23条</span>
+      <div class="law-title">设立有限责任公司的条件</div>
+      <div class="law-body">
+        (一) 股东符合法定人数；<br>
+        (二) 有符合公司章程规定的全体股东认缴的出资额；<br>
+        (三) 股东共同制定公司章程；<br>
+        (四) 有公司名称，建立符合有限责任公司要求的组织机构；<br>
+        (五) 有公司住所。
+      </div>
+    </div>
+    <div class="law-card">
+      <span class="law-num">第27条</span>
+      <div class="law-title">出资方式</div>
+      <div class="law-body">股东可以用货币出资，也可以用实物、知识产权、土地使用权等可以用货币估价并可以依法转让的非货币财产作价出资。对作为出资的非货币财产应当评估作价，不得高估或者低估作价。</div>
+    </div>
+    <div class="law-card">
+      <span class="law-num" style="background:#fef2f2;color:var(--danger)">第47条 ⭐</span>
+      <div class="law-title">注册资本五年实缴（核心条款）</div>
+      <div class="law-body">有限责任公司的注册资本为在公司登记机关登记的全体股东认缴的出资额。全体股东认缴的出资额由股东按照公司章程的规定自 <strong>公司成立之日起5年内</strong> 缴足。</div>
+    </div>
+    <div class="law-card">
+      <span class="law-num">第60条</span>
+      <div class="law-title">一人有限公司特别规定</div>
+      <div class="law-body">一人有限责任公司应当在公司登记中注明自然人独资或法人独资。一人有限责任公司不设股东会。</div>
+    </div>
+    <div class="law-card">
+      <span class="law-num" style="background:#fef2f2;color:var(--danger)">第62条 ⭐</span>
+      <div class="law-title">一人公司年度审计</div>
+      <div class="law-body">一人有限责任公司应当在每一个会计年度终了时编制财务会计报告，并经会计师事务所审计。</div>
+    </div>
+    <div class="law-card">
+      <span class="law-num" style="background:#fef2f2;color:var(--danger)">第63条 ⭐</span>
+      <div class="law-title">一人公司举证责任倒置</div>
+      <div class="law-body">一人有限责任公司的股东不能证明公司财产独立于股东自己的财产的，应当对公司债务承担 <strong>连带责任</strong>。</div>
+    </div>
+  </div>
+
+  <!-- Tab: 司法案例 -->
+  <div id="tab-cases" class="tab-content">
+    <div class="card">
+      <h3 style="margin-bottom:12px">📌 典型案例：薛某某诉辣府公司案</h3>
+      <table class="data-table" style="font-size:13px">
+        <tbody>
+          <tr><td style="width:100px;color:var(--muted)"><strong>案号</strong></td><td>（2022）沪02民终1384号</td></tr>
+          <tr><td style="color:var(--muted)"><strong>法院</strong></td><td>上海市第二中级人民法院</td></tr>
+          <tr><td style="color:var(--muted)"><strong>案由</strong></td><td>一人公司股东损害公司债权人利益责任纠纷</td></tr>
+          <tr><td style="color:var(--muted)"><strong>案情</strong></td><td>辣辣公司（一人公司）拖欠员工80万元，因无财产可供执行终结执行。债权人主张辣府公司（唯一股东）承担连带责任。</td></tr>
+          <tr><td style="color:var(--muted)"><strong>关键证据</strong></td><td>辣辣公司提交了2017-2021年间的《专项审计报告》，证明注册资本已实缴、两公司收支均已入账、各自独立核算、资金收付明细与银行流水一一对应。</td></tr>
+          <tr><td style="color:var(--muted)"><strong>裁判结果</strong></td><td>法院认定被告已完成举证责任，财产独立，<strong>不承担连带责任</strong>。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card" style="background:#f0fdf4;border-color:#bbf7d0">
+      <strong>🔑 案例启示：</strong><br>
+      ① <strong>专项审计报告</strong> 比年度审计报告更有力<br>
+      ② 核心是证明所有款项往来均有 <strong>财务记载</strong><br>
+      ③ 资金收付明细与银行流水能 <strong>一一对应</strong><br>
+      ④ 仅做年度审计报告，法院可能不认可为完成举证
+    </div>
+    <div class="card">
+      <h3 style="margin-bottom:12px">⚖️ 举证责任对比</h3>
+      <div class="compare-grid">
+        <div class="compare-col">
+          <div class="card" style="border-top-color:var(--success)">
+            <h3>普通有限公司</h3>
+            <p style="font-size:14px"><strong>债权人</strong> 举证<br>需证明股东有"滥用"行为<br>需证明"严重损害债权人利益"<br>举证难度：🔴 高</p>
+          </div>
+        </div>
+        <div class="compare-col">
+          <div class="card" style="border-top-color:var(--danger)">
+            <h3>一人有限公司</h3>
+            <p style="font-size:14px"><strong>股东</strong> 举证<br>需证明自己财产独立于公司<br>不能证明 → 连带责任<br>举证难度：🔴🔴 极高</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab: 存量过渡期 -->
+  <div id="tab-transition" class="tab-content">
+    <div class="card">
+      <h3 style="margin-bottom:16px">📅 存量公司过渡期计算器</h3>
+      <div class="calc-form">
+        <div class="form-group">
+          <label>公司成立日期</label>
+          <input type="date" id="t-date" value="2020-01-01">
+        </div>
+        <div class="form-group">
+          <label>当前认缴出资期限</label>
+          <select id="t-period">
+            <option value="5">5年内</option>
+            <option value="10">10年</option>
+            <option value="20">20年</option>
+            <option value="30">30年</option>
+            <option value="50">50年</option>
+            <option value="99">长期/无期限</option>
+          </select>
+        </div>
+        <button class="calc-btn" onclick="calcTransition()">📅 计算调整方案</button>
+      </div>
+      <div id="trans-result" class="result">
+        <div id="trans-detail"></div>
+      </div>
+    </div>
+    <div class="card" style="background:#fffbeb;border-color:#fde68a">
+      <strong>⚠️ 过渡期规则：</strong><br>
+      • 过渡期截止：<strong>2027年6月30日</strong><br>
+      • 出资期限超5年的 → 须在过渡期内调整至5年以内<br>
+      • 出资数额明显异常的 → 登记机关可要求调整<br>
+      • 涉及国家/公共利益的 → 可申请按原期限出资
+    </div>
+  </div>
+</section>
+
+<!-- ============================== -->
+<!-- Section 4: 风险自测            -->
+<!-- ============================== -->
+<section id="risk">
+  <div class="section-title">⚠️ 风险自测</div>
+  <div class="section-desc">3分钟评估你的公司注册合规风险</div>
+
+  <div class="card" id="quiz-container">
+    <div id="quiz-q1" class="quiz-card">
+      <div class="quiz-q">1. 你的公司是什么类型？</div>
+      <div class="quiz-options">
+        <div class="quiz-opt" onclick="selectOpt(1,0,0)">个体工商户 / 个人独资企业</div>
+        <div class="quiz-opt" onclick="selectOpt(1,1,2)">一人有限责任公司（自然人独资）</div>
+        <div class="quiz-opt" onclick="selectOpt(1,2,1)">一人有限责任公司（法人独资）</div>
+        <div class="quiz-opt" onclick="selectOpt(1,3,0)">多人有限责任公司</div>
+      </div>
+    </div>
+    <div id="quiz-q2" class="quiz-card" style="display:none">
+      <div class="quiz-q">2. 公司账户与你个人账户之间，是否存在资金混用？</div>
+      <div class="quiz-options">
+        <div class="quiz-opt" onclick="selectOpt(2,0,0)">完全分开，从不混用</div>
+        <div class="quiz-opt" onclick="selectOpt(2,1,3)">偶尔借用，但都做了记录</div>
+        <div class="quiz-opt" onclick="selectOpt(2,2,5)">经常混用，也没做记录</div>
+        <div class="quiz-opt" onclick="selectOpt(2,3,2)">不确定 / 不适用</div>
+      </div>
+    </div>
+    <div id="quiz-q3" class="quiz-card" style="display:none">
+      <div class="quiz-q">3. 是否每年编制财务会计报告并经审计？</div>
+      <div class="quiz-options">
+        <div class="quiz-opt" onclick="selectOpt(3,0,0)">是，每年都做</div>
+        <div class="quiz-opt" onclick="selectOpt(3,1,2)">做过，但不是每年都做</div>
+        <div class="quiz-opt" onclick="selectOpt(3,2,4)">从未做过</div>
+        <div class="quiz-opt" onclick="selectOpt(3,3,1)">公司类型不要求审计</div>
+      </div>
+    </div>
+    <div id="quiz-q4" class="quiz-card" style="display:none">
+      <div class="quiz-q">4. 注册资本是多少？实缴了多少？</div>
+      <div class="quiz-options">
+        <div class="quiz-opt" onclick="selectOpt(4,0,0)">已全额实缴</div>
+        <div class="quiz-opt" onclick="selectOpt(4,1,1)">认缴50万以内，5年内可缴足</div>
+        <div class="quiz-opt" onclick="selectOpt(4,2,2)">认缴50-500万，有能力缴足</div>
+        <div class="quiz-opt" onclick="selectOpt(4,3,4)">认缴500万以上或难以缴足</div>
+      </div>
+    </div>
+    <div id="quiz-q5" class="quiz-card" style="display:none">
+      <div class="quiz-q">5. 注册地址情况如何？</div>
+      <div class="quiz-options">
+        <div class="quiz-opt" onclick="selectOpt(5,0,0)">自有房产，实际经营</div>
+        <div class="quiz-opt" onclick="selectOpt(5,1,1)">租赁的商用地址</div>
+        <div class="quiz-opt" onclick="selectOpt(5,2,2)">政府/园区挂靠地址</div>
+        <div class="quiz-opt" onclick="selectOpt(5,3,3)">不确定地址是否合规</div>
+      </div>
+    </div>
+    <div id="quiz-q6" class="quiz-card" style="display:none">
+      <div class="quiz-q">6. 是否按时报送了工商年报？</div>
+      <div class="quiz-options">
+        <div class="quiz-opt" onclick="selectOpt(6,0,0)">每年都按时报送</div>
+        <div class="quiz-opt" onclick="selectOpt(6,1,2)">偶尔漏报，已补报</div>
+        <div class="quiz-opt" onclick="selectOpt(6,2,4)">有未报送的年份</div>
+        <div class="quiz-opt" onclick="selectOpt(6,3,1)">刚注册，还不涉及</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="quiz-result" class="quiz-result">
+    <div class="risk-score" id="qr-score">—</div>
+    <div class="risk-label" id="qr-label">—</div>
+    <div class="risk-advice" id="qr-advice"></div>
+  </div>
+</section>
+
+<!-- ============================== -->
+<!-- Section 5: AI 工商顾问          -->
+<!-- ============================== -->
+<section id="ai" class="ai-section">
+  <div class="section-title" style="justify-content:center">🤖 AI 工商顾问</div>
+  <div class="section-desc" style="text-align:center">有问题随时问，7×24小时在线</div>
+  <div class="ai-card">
+    <div class="ai-avatar">🤖</div>
+    <h3>工商通</h3>
+    <p>注册流程指引 · 材料清单 · 政策解读 · 名称核名 · 资质办理<br>各类工商难题，随时问我</p>
+    <a href="javascript:void(0)" class="ai-btn" onclick="openChat()">💬 开始咨询</a>
+  </div>
+  <div style="margin-top:20px;font-size:13px;color:var(--muted)">
+    也可直接访问：<a href="https://www.doubao.com/bot/YTHHxqOO" target="_blank" rel="noopener">https://www.doubao.com/bot/YTHHxqOO</a>
+  </div>
+</section>
+
+<!-- Floating Chat Button -->
+<div id="chat-fab" onclick="openChat()" title="AI 工商顾问">💬</div>
+
+<!-- Chat Panel -->
+<div id="chat-overlay" onclick="closeChat()"></div>
+<div id="chat-panel">
+  <div id="chat-header">
+    <span>🤖 工商通 — AI 工商顾问</span>
+    <button id="chat-close" onclick="closeChat()">✕</button>
+  </div>
+  <iframe id="chat-iframe" src="about:blank" allow="clipboard-write" sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
+  <div id="chat-fallback">
+    <p style="font-size:40px;margin-bottom:12px">🤖</p>
+    <p>智能体暂时无法内嵌显示，<br>请点击下方按钮在新窗口打开</p>
+    <a href="https://www.doubao.com/bot/YTHHxqOO" target="_blank" rel="noopener" class="ai-btn">💬 打开工商通</a>
+  </div>
+</div>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <p>📌 免责声明：本工具仅供参考，不构成法律建议。具体操作请以当地市场监管局要求为准或咨询专业律师。</p>
+  <p style="margin-top:8px">数据来源：《中华人民共和国公司法》（2024）、国务院注册资本登记管理规定、九民纪要等 · 更新时间：2026-04</p>
+</footer>
+
+<!-- ===== JavaScript ===== -->
+<script>
+// ===== Tab switching =====
+function switchTab(el, id) {
+  const parent = el.closest('section') || el.closest('.card');
+  parent.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  parent.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById(id).classList.add('active');
+}
+function switchTabDirect(id) {
+  const target = document.getElementById(id);
+  if (!target) return;
+  const section = target.closest('section');
+  section.querySelectorAll('.tab').forEach(t => {
+    t.classList.remove('active');
+    if (t.getAttribute('onclick') && t.getAttribute('onclick').includes(id)) t.classList.add('active');
+  });
+  section.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+  target.classList.add('active');
+}
+
+// ===== Nav scroll active =====
+const navLinks = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  const sections = ['guide','calc','law','risk','ai'];
+  let current = '';
+  sections.forEach(id => {
+    const sec = document.getElementById(id);
+    if (sec && sec.getBoundingClientRect().top <= 120) current = id;
+  });
+  navLinks.forEach(a => {
+    a.classList.remove('active');
+    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+  });
+});
+
+// ===== Cost Calculator =====
+function calcCost() {
+  const type = document.getElementById('c-type').value;
+  const capital = parseFloat(document.getElementById('c-capital').value) || 50;
+  const addr = document.getElementById('c-addr').value;
+  const acc = document.getElementById('c-accounting').value;
+  const method = document.getElementById('c-method').value;
+  const seal = document.getElementById('c-seal').value;
+
+  let sealCost = seal === 'free' ? 0 : 500;
+  let bankCost = 800;
+  let addrCost = {own:0, gov:800, biz:2000, office:5000}[addr];
+  let accCost = {self:0, 'agent-small':3000, 'agent-normal':5000}[acc];
+  let agentCost = method === 'agent' ? 1500 : 0;
+  let auditCost = type === 'one' ? 2000 : 0;
+  let annualReportCost = 0;
+
+  let total = sealCost + bankCost + addrCost + accCost + agentCost + auditCost;
+
+  let detail = `<strong>💰 费用明细：</strong><br>`;
+  detail += `刻章费：${sealCost === 0 ? '政府免费' : sealCost + '元'}<br>`;
+  detail += `银行开户：约${bankCost}元/年<br>`;
+  if (addrCost > 0) detail += `挂靠/租赁地址：约${addrCost}元/年<br>`;
+  else detail += `注册地址：自有房产（0元）<br>`;
+  if (accCost > 0) detail += `代理记账：约${accCost}元/年<br>`;
+  else detail += `记账：自行处理（0元，需具备会计知识）<br>`;
+  if (agentCost > 0) detail += `代办服务费：约${agentCost}元<br>`;
+  if (auditCost > 0) detail += `年度审计（一人公司法定要求）：约${auditCost}元/年<br>`;
+  detail += `<br>`;
+  detail += `⚡ 注册资本${capital}万元，须在5年内实缴<br>`;
+  if (type === 'one') detail += `⚠️ 一人公司：必须年度审计，财产混同将承担连带责任`;
+
+  document.getElementById('cr-seal').textContent = sealCost === 0 ? '免费' : '¥' + sealCost;
+  document.getElementById('cr-addr').textContent = addrCost === 0 ? '免费' : '¥' + addrCost;
+  document.getElementById('cr-account').textContent = accCost === 0 ? '免费' : '¥' + accCost;
+  document.getElementById('cr-total').textContent = '¥' + total;
+  document.getElementById('cr-detail').innerHTML = detail;
+  document.getElementById('calc-result').classList.add('show');
+}
+
+// ===== Transition Calculator =====
+function calcTransition() {
+  const dateStr = document.getElementById('t-date').value;
+  const period = parseInt(document.getElementById('t-period').value);
+  const founded = new Date(dateStr);
+  const deadline = new Date('2027-06-30');
+  const expiryDate = new Date(founded);
+  expiryDate.setFullYear(expiryDate.getFullYear() + period);
+
+  let html = '';
+  html += `<table class="data-table" style="font-size:13px"><tbody>`;
+  html += `<tr><td style="color:var(--muted)"><strong>公司成立日期</strong></td><td>${dateStr}</td></tr>`;
+  html += `<tr><td style="color:var(--muted)"><strong>当前认缴到期日</strong></td><td>${expiryDate.toISOString().split('T')[0]}（${period}年）</td></tr>`;
+  html += `<tr><td style="color:var(--muted)"><strong>过渡期截止日</strong></td><td>2027-06-30</td></tr>`;
+
+  if (period <= 5) {
+    html += `<tr><td style="color:var(--muted)"><strong>状态</strong></td><td style="color:var(--success);font-weight:700">✅ 无需调整 — 认缴期限已在5年以内</td></tr>`;
+  } else {
+    html += `<tr><td style="color:var(--muted)"><strong>状态</strong></td><td style="color:var(--danger);font-weight:700">⚠️ 需要调整</td></tr>`;
+    html += `<tr><td style="color:var(--muted)"><strong>要求</strong></td><td>须在2027年6月30日前修改章程，将出资期限调整至5年以内</td></tr>`;
+    html += `<tr><td style="color:var(--muted)"><strong>最晚出资日</strong></td><td>调整后之日起5年内缴足</td></tr>`;
+  }
+  html += `</tbody></table>`;
+
+  document.getElementById('trans-detail').innerHTML = html;
+  document.getElementById('trans-result').classList.add('show');
+}
+
+// ===== Risk Quiz =====
+let quizScores = {};
+let quizStep = 1;
+const quizTotal = 6;
+
+function selectOpt(q, opt, score) {
+  quizScores[q] = score;
+  const qCard = document.getElementById('quiz-q' + q);
+  qCard.querySelectorAll('.quiz-opt').forEach((o, i) => {
+    o.classList.toggle('selected', i === opt);
+  });
+  setTimeout(() => {
+    qCard.style.display = 'none';
+    if (q < quizTotal) {
+      document.getElementById('quiz-q' + (q + 1)).style.display = 'block';
+    } else {
+      showQuizResult();
+    }
+  }, 300);
+}
+
+function showQuizResult() {
+  let total = Object.values(quizScores).reduce((a, b) => a + b, 0);
+  let el = document.getElementById('quiz-result');
+  let scoreEl = document.getElementById('qr-score');
+  let labelEl = document.getElementById('qr-label');
+  let adviceEl = document.getElementById('qr-advice');
+
+  scoreEl.textContent = total + '分';
+  let advice = '';
+
+  if (total <= 3) {
+    el.className = 'quiz-result show safe';
+    labelEl.textContent = '🟢 低风险 — 合规状况良好';
+    labelEl.style.color = 'var(--success)';
+    advice = '✅ 恭喜！你的公司注册和运营状况合规。<br>建议继续保持：每年按时做年报、保持财务独立、定期审查经营范围。';
+  } else if (total <= 10) {
+    el.className = 'quiz-result show warn';
+    labelEl.textContent = '🟡 中等风险 — 存在合规隐患';
+    labelEl.style.color = 'var(--accent)';
+    advice = '⚠️ 你的公司存在一些合规风险，建议尽快处理：<br>';
+    if (quizScores[2] >= 3) advice += '• 🔴 公司与个人账户混用 → 必须严格分开，建立独立财务制度<br>';
+    if (quizScores[3] >= 2) advice += '• 🔴 未做年度审计 → 立即委托会计师事务所审计<br>';
+    if (quizScores[4] >= 3) advice += '• ⚠️ 注册资本过高 → 考虑减资至合理水平（5年内须实缴）<br>';
+    if (quizScores[5] >= 2) advice += '• ⚠️ 地址合规问题 → 确认挂靠地址合法且能接收工商信函<br>';
+    if (quizScores[6] >= 2) advice += '• ⚠️ 年报问题 → 立即补报，避免被列入异常名录<br>';
+  } else {
+    el.className = 'quiz-result show danger';
+    labelEl.textContent = '🔴 高风险 — 需要立即整改';
+    labelEl.style.color = 'var(--danger)';
+    advice = '🚨 你的公司存在严重合规风险！建议立即采取行动：<br>';
+    advice += '• 🔴 优先处理财产混同问题 — 一人公司最致命的风险<br>';
+    advice += '• 🔴 委托专项审计 — 证明财产独立性<br>';
+    advice += '• 🔴 重新评估注册资本 — 5年内必须缴足<br>';
+    advice += '• 🔴 补报所有缺失的年报<br>';
+    advice += '• 💡 建议咨询专业律师，评估是否需要变更公司类型或减资';
+  }
+
+  adviceEl.innerHTML = advice;
+}
+// ===== Chat Panel =====
+let chatLoaded = false;
+function openChat() {
+  document.getElementById('chat-panel').classList.add('show');
+  document.getElementById('chat-overlay').classList.add('show');
+  document.getElementById('chat-fab').style.display = 'none';
+  if (!chatLoaded) {
+    const iframe = document.getElementById('chat-iframe');
+    const fallback = document.getElementById('chat-fallback');
+    iframe.src = 'https://www.doubao.com/bot/YTHHxqOO';
+    iframe.onerror = function() {
+      iframe.style.display = 'none';
+      fallback.style.display = 'block';
+    };
+    // Fallback: if iframe fails to load after timeout
+    setTimeout(() => {
+      try {
+        if (!iframe.contentDocument || iframe.contentDocument.body === null) {
+          iframe.style.display = 'none';
+          fallback.style.display = 'block';
+        }
+      } catch(e) {
+        // Cross-origin, iframe loaded fine
+      }
+    }, 5000);
+    chatLoaded = true;
+  }
+}
+function closeChat() {
+  document.getElementById('chat-panel').classList.remove('show');
+  document.getElementById('chat-overlay').classList.remove('show');
+  document.getElementById('chat-fab').style.display = 'flex';
+}
+
+</script>
+
+</body>
+</html>
